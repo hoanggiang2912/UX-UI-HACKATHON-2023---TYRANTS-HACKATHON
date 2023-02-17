@@ -71,20 +71,20 @@ header{
 .header-menu .fa-angle-up{
     transition: .25s linear;
 }
-.subnav{
+.header-subnav{
     opacity: 0;
     visibility: hidden;
     position: absolute;
     top: 80px;
     transition: all .25s linear;
 }
-.subnav li{
+.header-subnav li{
     background-color: var(--header-clr);
     display: block;
     line-height: 50px;
     border-bottom: 1px solid #000;
 }
-.subnav li a {
+.header-subnav li a {
     color: white;
     text-decoration: none;
     padding: 0 20px;
@@ -94,7 +94,7 @@ header{
     word-spacing: 0;
     transition: .25s linear;
 }
-.subnav li a:hover{
+.header-subnav li a:hover{
     color: var(--logo-clr);
 }
 .header-menu > li:hover > a{
@@ -103,7 +103,7 @@ header{
 .header-menu > li:hover > a > .fa-angle-up{
     transform: rotate(180deg);
 }
-.header-menu > li:hover > .subnav{
+.header-menu > li:hover > .header-subnav{
     opacity: 1;
     visibility: visible;
 }
