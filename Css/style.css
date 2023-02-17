@@ -4,6 +4,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+*,html{
+    color: white;
+    font-size: 16px;
+}
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -11,17 +15,26 @@ body{
     --header-clr: #162239;
     --logo-clr: #f4a325;
 }
-
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+.clear-both{
+    clear: both;
+}
 /* Header Trang chủ */
 header{
     width: 100%;
     height: 80px;
     position: fixed;
+    top: 0;
+    left: 0;
     display: flex;
     background-color: var(--header-clr);
     padding: 0 50px;
     text-transform: uppercase;
     color: var(--header-clr);
+    z-index: 9999;
 }
 .header-logo{
     width: 30%;
@@ -55,6 +68,7 @@ header{
     letter-spacing: 0.5px;
     word-spacing: 0;
     transition: all .25s linear;
+    list-style: none;
 }
 .header-menu > li{
     transition: all .25s linear;
@@ -107,8 +121,96 @@ header{
     opacity: 1;
     visibility: visible;
 }
+/* Main-Banner-Video */
+.main-banner{
+    position: relative;
+    overflow: hidden;
+}
+.video-overlay{
+    position: absolute;
+    background-color: rgba(22, 34, 60, 0.90);
+    top: 0;
+    left: 0;
+    bottom: 7px;
+    width: 100%;
+}
+.video-overlay .caption{
+    text-align: center;
+    position: absolute;
+    width: 80%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.video-overlay .caption h6{
+    margin-top: 0px;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 1px;
+}
+.video-overlay .caption h2{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 64px;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #fff;
+    letter-spacing: 1px;
+}
+.video-overlay .caption h6 em{
+    font-size: 20px;
+}
+.header-features-content-items{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+}
+.header-features-content{
+    background-color: #0c1228;
+    color: #fff;
+    padding: 40px 200px 40px 40px;
+    display: flex;
+    margin: 5px 50px;
+}
+.features-content-show p{
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+}
+.features-content-show i{
+    margin-right: 10px;
+}
 /* About-Info Về cuộc thi */
+.about{
+    background-image: url('../assets/img/choosing-bg.jpg');
+    background-color: #172238;
+}
+.about-info-uiux::before{
+    content: '';
+    width: 1px;
+    height: 100px;
+    background-color: rgba(250, 250, 250, 0.1);
+    position: absolute;
+    top: -102px;
+    left: 50%;
+    transform: translate(-50%);
+}
 
+.about .about-info .about-info-uiux p{
+    color: white;
+    text-align: center;
+    /* margin-top: 100px; */
+    border: 1px solid rgba(250, 250, 250, 0.1);
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 0.5px;
+}
 /* Professional Chuyên gia */
 
 /* Video */
