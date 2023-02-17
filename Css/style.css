@@ -4,9 +4,109 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+:root{
+    --header-clr: #162239;
+    --logo-clr: #f4a325;
+}
 
 /* Header Trang chủ */
-
+header{
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    display: flex;
+    background-color: var(--header-clr);
+    padding: 0 50px;
+    text-transform: uppercase;
+    color: var(--header-clr);
+}
+.header-logo{
+    width: 30%;
+    height: inherit;
+}
+.header-logo em,
+.header-logo a{
+    line-height: 80px;
+    text-decoration: none;
+    color: white;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+}
+.header-logo em{
+    color: var(--logo-clr)
+}
+.header-main-menu{
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+}
+.header-menu{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+.header-menu li{
+    line-height: 80px;
+    font-weight: 700;   
+    letter-spacing: 0.5px;
+    word-spacing: 0;
+    transition: all .25s linear;
+}
+.header-menu > li{
+    transition: all .25s linear;
+}
+.header-menu > li > a{
+    position: relative; 
+    width: 200px;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    padding: 10px 10px;
+    transition: all .25s linear;
+}
+.header-menu .fa-angle-up{
+    transition: .25s linear;
+}
+.subnav{
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 80px;
+    transition: all .25s linear;
+}
+.subnav li{
+    background-color: var(--header-clr);
+    display: block;
+    line-height: 50px;
+    border-bottom: 1px solid #000;
+}
+.subnav li a {
+    color: white;
+    text-decoration: none;
+    padding: 0 20px;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    word-spacing: 0;
+    transition: .25s linear;
+}
+.subnav li a:hover{
+    color: var(--logo-clr);
+}
+.header-menu > li:hover > a{
+    box-shadow: inset 0 0 0 2px var(--logo-clr);
+}
+.header-menu > li:hover > a > .fa-angle-up{
+    transform: rotate(180deg);
+}
+.header-menu > li:hover > .subnav{
+    opacity: 1;
+    visibility: visible;
+}
 /* About-Info Về cuộc thi */
 
 /* Professional Chuyên gia */
