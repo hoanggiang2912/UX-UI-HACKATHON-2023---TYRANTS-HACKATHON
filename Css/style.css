@@ -99,6 +99,7 @@ header{
     border-bottom: 1px solid #000;
 }
 .header-subnav li a {
+    display: block;
     color: white;
     text-decoration: none;
     padding: 0 20px;
