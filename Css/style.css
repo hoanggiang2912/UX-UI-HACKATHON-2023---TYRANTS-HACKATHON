@@ -153,7 +153,6 @@ body{
 .about{
     width: 100%;    
     height: 700px;
-    padding: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -270,17 +269,24 @@ body{
     width: 100%;
     height: 400px;
     padding-inline: 20px;
+    background-color: var(--header-clr);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .feedback-header{
     text-align: center;
 }
 .feedback-title{
-    margin-top: 50px;
+    margin-top: 0px;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 800;
 }
 .feedback-content{
     display: flex;
     justify-content: center;
-    height: 300px;
+    height: 280px;
     align-items: center;
 }
 .feedback-items{
@@ -294,7 +300,7 @@ body{
     justify-content: space-evenly;
 }
 .feedback-csm1{
-
+    
 }
 .feedback-csm-detail{
     display: flex;
@@ -305,7 +311,7 @@ body{
     height: 100%;
 }
 .feedback-csm-avt{
-    width: 50px;
+    width: 50px; 
     height: 50px;
     border-radius: 100rem;
 }
@@ -321,3 +327,18 @@ body{
 /* footer */
 
 /* scrollbar custom */
+body::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+    background-color: var(--white);
+    border-radius: 5px;
+}
+body::-webkit-scrollbar-thumb{
+    width: 100%;
+    height: 10px;
+    border-radius: 10px;
+    background-color: lightgray;
+}
+body::-webkit-scrollbar-track{
+    
+}
