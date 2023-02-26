@@ -740,6 +740,10 @@ footer{
 }
 .fa-brands{
     font-size:30px;
+    transition: .2s ease;
+}
+.fa-brands:hover{
+    transform: scale(1.2);
 }
 .social-icons-list li,
 .footer-items-detail-list li{
