@@ -665,8 +665,8 @@ background-size: cover;
 box-shadow: rgba(149, 24, 138, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 50px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-.From_Dangky {
-width: 100vw;
+.Form_Dangky {
+width: 100%;
 height: 100vh;
 box-sizing: border-box;
 background-size: cover;
@@ -676,41 +676,38 @@ justify-content: center;
 align-items: center;
 }
 
+
+
 .form_dangky--header {
 display: flex;
 justify-content: center;
-
-
 }
 
 .form_dangky--header::after {}
 
-.form_dangky--titel {
-text-align: center;
-color: white;
-font-family: 'Montserrat', sans-serif;
-font-size: 50px;
+.form_dangky--title {
+    text-align: center;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    margin-block: 40px;
 }
 
-.from_dangky--bodyform {
-display: flex;
-justify-content: center;
-margin-top: 40px;
-
+.form_dangky--bodyform {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.bodyfrom--imageform {
-min-width: 400px;
-min-height: 100px;
-
-display: flex;
-flex-direction: column;
-align-items: center;
-background-color: rgb(13, 48, 78);
-border-bottom-right-radius:20px ;
-border-top-left-radius:20px ;
-
-
+.bodyform--imageform {
+    min-width: 400px;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(13, 48, 78);
+    border-bottom-right-radius:20px ;
+    border-top-left-radius:20px ;
 }
 
 .imageform--big {
@@ -747,11 +744,11 @@ border-bottom-right-radius: 50%;
 }
 
 /* phần form đăng ký */
-.from_dangky--textform input:focus {
+.form_dangky--textform input:focus {
 outline: none;
 }
 
-.from_dangky--textform {
+.form_dangky--textform {
 margin-left: 50px;
 display: flex;
 flex-direction: column;
@@ -760,20 +757,20 @@ justify-content: center;
 text-align: center;
 }
 
-.from_dangky--textform input {
+.form_dangky--textform input {
 padding: 0;
 margin-bottom: 15px;
 border: none;
 }
 
-.from_dangky--textform>label>input {
+.form_dangky--textform>label>input {
 width: 90%;
 height: 50px;
 border-radius: 20px;
 padding: 0 0 0 20px;
 }
 
-.from_dangky--textform select {
+.form_dangky--textform select {
 outline: none;
 width: 280px;
 height: 50px;
@@ -844,7 +841,7 @@ border-radius: 5px;
 /* feedback */
 .feedback-container{
     width: 100%;
-    height: 400px;
+    height: 600px;
     padding-inline: 20px;
     /* background-color: var(--header-clr); */
     display: flex;
@@ -921,6 +918,7 @@ footer{
 .footer-items-title{
     font-size: 30px;
     font-weight: 500;
+    margin-bottom: 20px;
 }
 .footer-items-logo{
     width: 100px;
@@ -991,6 +989,9 @@ body::-webkit-scrollbar-track{
     height: 100%;
     background-color: white;
     transform: translateX(100%);
+    opacity: 0;
+    visibility: hidden;
+    display: none;
 }
 .header-tablet-nav li{
     list-style-type: none;
@@ -1046,6 +1047,8 @@ body::-webkit-scrollbar-track{
     }
     #nav-tablet-btn:checked ~ .header-tablet-nav{
         transform: translateX(0%);
+        opacity: 1;
+        visibility: visible;
     }
     @keyframes overlay {
         from{
@@ -1075,6 +1078,64 @@ body::-webkit-scrollbar-track{
     .about-img img{
         width: 100%;
         height: 100%;
+    }
+    /* log in form responsive */
+    .bodyform--imageform{
+        display: none;
+    }
+    .br_plus{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    /* feedback responsive */
+    .feedback-container{
+        height: 700px;
+        justify-content: space-around;
+    }
+    .feedback-title{
+        margin: 0;
+    }
+    .feedback-content{
+        height: 600px;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .feedback-items{
+        width: 100%;
+        margin-block: 20px;
+    }
+    /* footer responsive */
+    footer{
+        background-color: var(--header-clr);
+        height: 1000px;
+    }
+    .footer-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 1000px;
+        background-color: var(--header-clr);
+        text-align: center;
+    }
+    .footer-items{
+        margin-bottom: 10px;
+    }
+    .footer-items img{
+        margin: 0 auto;
+    }
+    .footer-items-title{
+        margin-bottom: 20px;
+    }
+    .footer-items-detail-list li{
+        margin-bottom: 20px;
+    }
+    .social-icons-list {
+        width: 100%;
+        margin-left: 40px;
+        justify-content: space-evenly;
     }
 }
 @media screen and (min-width: 576px) and (max-width: 767.98px){
