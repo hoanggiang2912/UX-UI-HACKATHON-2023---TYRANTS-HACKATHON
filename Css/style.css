@@ -190,7 +190,7 @@ padding-left: 15px;
     -webkit-text-fill-color: transparent;
 }
 .about-content-wrapper{
-    width: 70%;
+    width: 80%;
     height: 350px;
     margin-inline: auto;
     display: flex;
@@ -198,13 +198,13 @@ padding-left: 15px;
 .about-content{
     width: 50%;
     height: 100%;
-    padding-inline: 40px;
 }
 .about-content-left-text{
     color: black;
+    padding-inline: 40px;
 }
 .about-content-icons-list{
-    padding-block: 30px;
+    padding: 30px 40px;
 }
 .about-icon{
     display: inline-block;
@@ -653,32 +653,32 @@ padding-left: 15px;
 
 /* sign in form */
 .br_plus {
-  height: 680px;
-  width: 1200px;
-  border-radius: 10px;
-  background: linear-gradient(135deg, rgba(98, 10, 120, 0.1), rgba(174, 15, 195, 0));
-  backdrop-filter: blur(2px);
-  border:1px solid rgba(71, 2, 94, 0.18);
-  box-shadow: 0 8px 32px 0 rgba(136, 5, 148, 0.37);
-  background-repeat: no-repeat;
-  background-size: cover;
-  box-shadow: rgba(149, 24, 138, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 50px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+height: 680px;
+width: 1200px;
+border-radius: 10px;
+background: linear-gradient(135deg, rgba(98, 10, 120, 0.1), rgba(174, 15, 195, 0));
+backdrop-filter: blur(2px);
+border:1px solid rgba(71, 2, 94, 0.18);
+box-shadow: 0 8px 32px 0 rgba(136, 5, 148, 0.37);
+background-repeat: no-repeat;
+background-size: cover;
+box-shadow: rgba(149, 24, 138, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 50px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .From_Dangky {
-  width: 100vw;
-  height: 100vh;
-  box-sizing: border-box;
-  background-size: cover;
-  display: flex;
-  background-image: url(../assets/img/halong-bay-593839.jpg);
-  justify-content: center;
-  align-items: center;
+width: 100vw;
+height: 100vh;
+box-sizing: border-box;
+background-size: cover;
+display: flex;
+background-image: url(../assets/img/halong-bay-593839.jpg);
+justify-content: center;
+align-items: center;
 }
 
 .form_dangky--header {
-  display: flex;
-  justify-content: center;
+display: flex;
+justify-content: center;
 
 
 }
@@ -686,146 +686,146 @@ padding-left: 15px;
 .form_dangky--header::after {}
 
 .form_dangky--titel {
-  text-align: center;
-  color: white;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 50px;
+text-align: center;
+color: white;
+font-family: 'Montserrat', sans-serif;
+font-size: 50px;
 }
 
 .from_dangky--bodyform {
-  display: flex;
-  justify-content: center;
-  margin-top: 40px;
-  
+display: flex;
+justify-content: center;
+margin-top: 40px;
+
 }
 
 .bodyfrom--imageform {
-  min-width: 400px;
-  min-height: 100px;
+min-width: 400px;
+min-height: 100px;
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: rgb(13, 48, 78);
-  border-bottom-right-radius:20px ;
-  border-top-left-radius:20px ;
+display: flex;
+flex-direction: column;
+align-items: center;
+background-color: rgb(13, 48, 78);
+border-bottom-right-radius:20px ;
+border-top-left-radius:20px ;
 
 
 }
 
 .imageform--big {
-  height: 200px;
-  width: 440px;
-  background-image: url(../assets/img/halong_topview.jpg);
-  background-size: cover;
-  margin: 5px;
-  border-top-left-radius: 40%;
-  margin: 0;
-  padding: 0;
+height: 200px;
+width: 440px;
+background-image: url(../assets/img/halong_topview.jpg);
+background-size: cover;
+margin: 5px;
+border-top-left-radius: 40%;
+margin: 0;
+padding: 0;
 }
 
 .imageform--small {
-  display: flex;
-  justify-content: center;
+display: flex;
+justify-content: center;
 }
 
 .imageform--primary {
-  height: 210px;
-  width: 215px;
-  background-image: url(../assets/img/sapa_ruongbatthang.jpg);
-  background-size: cover;
-  margin: 5px
+height: 210px;
+width: 215px;
+background-image: url(../assets/img/sapa_ruongbatthang.jpg);
+background-size: cover;
+margin: 5px
 }
 
 .imageform--secondary {
-  height: 210px;
-  width: 215px;
-  background-image: url(../assets/img/sapa_nhavanui.jpg);
-  background-size: cover;
-  margin: 5px;
-  border-bottom-right-radius: 50%;
+height: 210px;
+width: 215px;
+background-image: url(../assets/img/sapa_nhavanui.jpg);
+background-size: cover;
+margin: 5px;
+border-bottom-right-radius: 50%;
 }
 
 /* phần form đăng ký */
 .from_dangky--textform input:focus {
-  outline: none;
+outline: none;
 }
 
 .from_dangky--textform {
-  margin-left: 50px;
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-  justify-content: center;
-  text-align: center;
+margin-left: 50px;
+display: flex;
+flex-direction: column;
+box-sizing: border-box;
+justify-content: center;
+text-align: center;
 }
 
 .from_dangky--textform input {
-  padding: 0;
-  margin-bottom: 15px;
-  border: none;
+padding: 0;
+margin-bottom: 15px;
+border: none;
 }
 
 .from_dangky--textform>label>input {
-  width: 90%;
-  height: 50px;
-  border-radius: 20px;
-  padding: 0 0 0 20px;
+width: 90%;
+height: 50px;
+border-radius: 20px;
+padding: 0 0 0 20px;
 }
 
 .from_dangky--textform select {
-  outline: none;
-  width: 280px;
-  height: 50px;
-  border-radius: 20px;
-  margin-bottom: 15px;
-  padding: 0 0 0 20px;
-  color: black;
+outline: none;
+width: 280px;
+height: 50px;
+border-radius: 20px;
+margin-bottom: 15px;
+padding: 0 0 0 20px;
+color: black;
 }
 .textform--contact{
-  display: flex;
-  flex-direction: row;
+display: flex;
+flex-direction: row;
 
 }
 .textform--contact input {
-  border-radius: 20px;
-  height: 50px;
+border-radius: 20px;
+height: 50px;
 }
 .plus_phone{
- margin-right: 5px;
+margin-right: 5px;
 }
 .plus_phone>input {
-  text-align: center;
-  width: 50px;
-  
+text-align: center;
+width: 50px;
+
 }
 
 .phone>input {
-  padding-left: 20px;
+padding-left: 20px;
 }
 
 .textform--btn>button {
-  height: 40px;
-  width: 160px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-family: 'Montserrat', sans-serif;
+height: 40px;
+width: 160px;
+border-radius: 5px;
+cursor: pointer;
+font-family: 'Montserrat', sans-serif;
 }
 .textform--btn button{
-  display: inline-block;
-  padding: 0 30px;
-  align-items: center;
-  color: white;
-  background-color: transparent;
-  outline: none;
-  position: relative;
-  cursor: pointer;
-  border: none;
-  font-size: 20px;
-  
+display: inline-block;
+padding: 0 30px;
+align-items: center;
+color: white;
+background-color: transparent;
+outline: none;
+position: relative;
+cursor: pointer;
+border: none;
+font-size: 20px;
+
 }
 .textform--btn button:before{
-  content: "";
+content: "";
 position: absolute;
 top: 0;
 left: 0;
@@ -836,9 +836,9 @@ z-index: -1;
 transition: height 0.25s linear, width 0.25s ease-in-out 0.25s;
 }
 .textform--btn button:hover:before {
-  height: 100%;
-  width: 100%;
-  border-radius: 5px;
+height: 100%;
+width: 100%;
+border-radius: 5px;
 }
 
 /* feedback */
@@ -1010,8 +1010,10 @@ body::-webkit-scrollbar-track{
     padding: 20px;
     color: black;
 }
-
-
+/* about tablet */
+.about-content-tablet-wrapper{
+    display: none;
+}
 
 
 
@@ -1054,6 +1056,26 @@ body::-webkit-scrollbar-track{
         }
     }
     /* end header responsive */
+
+    /* about responsive */
+    .about-content-wrapper{
+        display: none;
+    }
+    .about-content-tablet-wrapper{
+        display: block !important;
+        padding: 0;
+        margin: 0;
+    }
+    .about-img{
+        margin-top: 50px;
+        width: 80%;
+        height: 60%;
+        margin-inline: auto;    
+    }
+    .about-img img{
+        width: 100%;
+        height: 100%;
+    }
 }
 @media screen and (min-width: 576px) and (max-width: 767.98px){
     br{
