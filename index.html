@@ -14,9 +14,40 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Main-CSS -->
     <link rel="stylesheet" href="./Css/style.css">
+    <link rel="stylesheet" href="./Css/darkModeTheme.css">
     <title>Tyrants Hackathon | UI/UX Hackathon</title>
 </head>
 <body>
+    <!-- BackToTop -->
+    <a id="backToTop"></a>
+    <!-- SIDEBAR MINI -->
+    <div class="sidebarMini">
+        <button class="sidebarMini__button">
+            <i class="fa fa-cog"></i>
+        </button>
+        <div class="sidebarMini__content">
+            <h2>Dark Mode</h2>
+            <div class="d-flex">
+                <span>Off</span>
+                <label class="switch" for="checkbox">
+                    <input type="checkbox" name="" id="checkbox">
+                    <div class="slider"></div>
+                </label>
+                <span>On</span>
+            </div>
+        </div>
+        <div class="sidebarMini__content">
+            <h2>Language</h2>
+            <div class="d-flex">
+                <span>ENG</span>
+                <label class="switch" for="checkbox2">
+                    <input type="checkbox2" name="" id="checkbox2">
+                    <div class="slider"></div>
+                </label>
+                <span>VIE</span>
+            </div>
+        </div>
+    </div>
     <!-- Header Trang chủ-->
     <header class="header">
         <img src="/assets/img/header-background.jpg" alt="">
@@ -328,7 +359,7 @@
             <div class="tour-items-footer section">
                 <div class="tour-container">
                     <div class="tour-box">
-                        <img src="./assets/img/Hue1" alt="Hue1" />
+                        <img src="./assets/img/Hue1.jpg" alt="Hue1" />
                     </div>
                     <div class="tour-box">
                         <img src="./assets/img//Hue4.jpg" alt="Hue4" />
@@ -571,6 +602,7 @@
 
     <!-- Thư viện Jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+    <!-- Main JS -->
+    <script src="./js/main.js"></script>
 </body>
 </html>
