@@ -1,0 +1,42 @@
+/* SideBar Mini */
+body.darkMode {
+    color: #9da9bb;
+    background-color: #152e4d;
+}
+
+.darkMode .sidebarMini {
+    background-color: #152e4d;
+    color: #fff;
+    border-left-color: #152e4d;
+}
+
+.darkMode .sidebarMini .sidebarMini__button {
+    background-color: #152e4d;
+    border-color: #152e4d;
+    color: #fff;
+}
+
+.darkMode .sidebarMini .sidebarMini__content .switch .slider {
+    background-color: #061325;
+    box-shadow: 0 0 2px 3px #344050;
+}
+
+/* Body DarkMode */
+.darkMode .about{
+    background-color: #152e4d;
+}
+.darkMode .about-content .about-content-left-text{
+    color: white;
+}
+.darkMode .tour-items-body-left p{
+    color: white;
+}
+.darkMode .feedback .feedback-header h1{
+    color: #FD6327;
+}
+.darkMode .feedback-csm-detail-inner h4{
+    color: rgb(35, 113, 212);
+}
+.darkMode .csm-feedback p{
+    color: white;
+}
