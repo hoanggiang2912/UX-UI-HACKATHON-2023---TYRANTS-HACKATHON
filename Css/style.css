@@ -17,6 +17,7 @@ body {
 }
 
 :root {
+    --clr-neon: hsl(317 100% 54%);
     --header-clr: #162239;
     --logo-clr: #f4a325;
     --blue: #007bff;
@@ -767,8 +768,6 @@ body {
     justify-content: center;
 }
 
-.form_dangky--header::after {}
-
 .form_dangky--title {
     text-align: center;
     color: white;
@@ -828,7 +827,7 @@ body {
 }
 
 /* phần form đăng ký */
-.form_dangky--textform input:focus {
+/* .form_dangky--textform input:focus {
     outline: none;
 }
 
@@ -927,6 +926,127 @@ body {
     height: 100%;
     width: 100%;
     border-radius: 5px;
+} */
+.form_dangky--bodyform{
+    display: flex;
+    justify-content: space-around;
+}
+.form_dangky--textform{
+    width: 550px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.fullname,
+.email{
+    width: 70%;
+    position: relative;
+}
+.fullname,
+.email,
+.phone-number-input,
+.select-phone-number,
+.csm-note,
+.place{
+    transition: 0.25s ease-in-out;
+    outline: none;
+}
+.fullname:focus,
+.email:focus,
+.phone-number-input:focus,
+.select-phone-number:focus,
+.csm-note:focus,
+.place:focus{
+    box-shadow: inset 0 0 0 1px var(--indigo);
+}
+.form-input{
+    width: 100%;
+    height: 50px;
+    border-radius: 15px;
+    position: relative;
+    padding: 0 34px;
+    color: black;
+}
+.form-input-email{
+    width: 70%;
+}
+.form-label{
+    display: inline-block;
+    position: absolute;
+    transform: translateX(-350px);
+    top: 13px;
+    color: black;
+    width: 200px;
+    pointer-events: none;
+    user-select: none;
+}
+.phone-number{
+    display: flex;  
+}
+.select-phone-number{
+    width: 100px;
+    margin-right: 10px;
+    color: black;  
+    height: 50px; 
+    border-radius: 10px;
+    padding: 0 20px;
+}
+.place:focus > .fa-caret-down,
+.select-phone-number:focus > .fa-caret-down{
+    transform: rotate(90deg);
+}
+option{
+    color: black;
+    height: 20px;
+}
+.phone-number-input{
+    width: 270px;
+    height: 50px;
+    border-radius: 10px;
+    padding: 0 20px;
+    color: black;
+}
+.place{
+    color: black;
+    width: 70%;
+    height: 50px;
+    border-radius: 10px;
+    padding: 0 20px;
+}
+.csm-note{
+    display: block;
+    border-radius: 10px;
+    color: black;
+    width: 70%;
+    height: 200px;
+    padding: 20px;
+}
+.sign-in-btn{
+    width: 200px;
+    padding: 10px 40px;
+    color: white;
+    outline: none;
+    border: 0;
+    border-radius: 10px;
+    transition: .25s ease;
+    background: #6A5AF9;
+}
+.sign-in-btn:hover{
+    color: white;
+    box-shadow: 0 0 5px 1px #6A5AF9;
+}
+.sign-in-btn:active{
+    animation: btn-focus 100ms ease alternate;
+}
+@keyframes btn-focus {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.1);
+    }
 }
 
 /* feedback */
@@ -982,13 +1102,13 @@ body {
 
 .feedback-csm-detail-inner h4 {
     color: var(--header-clr);
-
 }
 
 .feedback-csm-avt {
     width: 50px;
     height: 50px;
     border-radius: 100rem;
+    box-shadow: 0 0 2px 1px var(--info);
 }
 
 .csm-feedback p {
@@ -1064,6 +1184,7 @@ footer {
 /* scrollbar custom */
 body::-webkit-scrollbar {
     width: 5px;
+    width: 100%;
 }
 
 body::-webkit-scrollbar-thumb {
@@ -1227,6 +1348,7 @@ body::-webkit-scrollbar-track {
     .feedback-container {
         height: 700px;
         justify-content: space-around;
+        padding-inline: 100px;
     }
 
     .feedback-title {
