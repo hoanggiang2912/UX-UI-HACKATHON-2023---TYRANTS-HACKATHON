@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=VT323&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap" rel="stylesheet">
     <!-- CSS-Animation -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- Font-Awesome -->
@@ -15,6 +16,8 @@
     <!-- Main-CSS -->
     <link rel="stylesheet" href="./Css/style.css">
     <link rel="stylesheet" href="./Css/darkModeTheme.css">
+    <link rel="stylesheet" href="./Css/responsive.css">
+    <link rel="stylesheet" href="./bootstrap.css">
     <title>Tyrants Hackathon | UI/UX Hackathon</title>
 </head>
 <body>
@@ -36,17 +39,6 @@
                 <span>On</span>
             </div>
         </div>
-        <div class="sidebarMini__content">
-            <h2>Language</h2>
-            <div class="d-flex">
-                <span>ENG</span>
-                <label class="switch" for="checkbox2">
-                    <input type="checkbox2" name="" id="checkbox2">
-                    <div class="slider"></div>
-                </label>
-                <span>VIE</span>
-            </div>
-        </div>
     </div>
     <!-- Header Trang chủ-->
     <header class="header">
@@ -60,9 +52,9 @@
                 <li>
                     <a href="">Tour</a>
                     <ul class="subnav">
-                        <li><a href="">Huế</a></li>
-                        <li><a href="">Sapa</a></li>
-                        <li><a href="">Vịnh Hạ Long</a></li>
+                        <li><a href="#hue">Huế</a></li>
+                        <li><a href="#sapa">Sapa</a></li>
+                        <li><a href="#vhl">Vịnh Hạ Long</a></li>
                     </ul>
                 </li>
                 <li><a href="">About us</a></li>
@@ -91,6 +83,39 @@
             <li><a href="">Contact</a></li>
         </ul>
     </header>
+    <!-- <header id="headerFixed">
+        <nav class="navbar container navbar-expand-md">
+            <a class="navbar-brand" href="#">
+                <img src="./img/logo.svg" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#movieNavBar"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                    <i class="fa fa-bars"></i>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="movieNavBar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active line">
+                        <a class="nav-link" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item line">
+                        <a class="nav-link" href="#">WHAT'S ON</a>
+                    </li>
+                    <li class="nav-item line">
+                        <a class="nav-link" href="#">SHORTCODES</a>
+                    </li>
+                    <li class="nav-item line">
+                        <a class="nav-link" href="#">NEWS</a>
+                    </li>
+                    <li class="nav-item line">
+                        <a class="nav-link" href="#">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header> -->
+    
     <!-- About Viet Nam -->
     <section class="about">
         <div class="about-header">
@@ -105,7 +130,7 @@
                         <div class="ribbon">
                             <div class="ribbon-tourname"><h4>HUẾ</h4></div>
                             <div class="ribbon-shor-detail">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</div>
-                            <a href="" class="more">More</a>
+                            <a href="#hue" class="more">More</a>
                         </div>
                     </li>
                     <li class="about-icon about-icon-tour-2">
@@ -113,7 +138,7 @@
                         <div class="ribbon">
                             <div class="ribbon-tourname"><h4>SAPA</h4></div>
                             <div class="ribbon-shor-detail">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</div>
-                            <a href="" class="more">More</a>
+                            <a href="#sapa" class="more">More</a>
                         </div>
                     </li>
                     <li class="about-icon about-icon-tour-3">
@@ -121,7 +146,7 @@
                         <div class="ribbon">
                             <div class="ribbon-tourname"><h4>Vịnh Hạ Long</h4></div>
                             <div class="ribbon-shor-detail">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</div>
-                            <a href="" class="more">More</a>
+                            <a href="#vhl" class="more">More</a>
                         </div>
                     </li>
                 </ul>
@@ -151,7 +176,7 @@
         </div>
         <div class="container">
         <div class="tour__SP">
-            <div class="tour-items">
+            <div id="sapa" class="tour-items">
             <div class="tour-items-header section">
                 <div>
                 <h2>SAPA</h2>
@@ -248,7 +273,7 @@
         </div>
         <div class="container">
         <div class="tour__HA">
-            <div class="tour-items">
+            <div id="hue" class="tour-items">
             <div class="tour-items-header section">
                 <div>
                 <h2 style="font-family: 'Lobster'">HUE</h2>
@@ -333,7 +358,7 @@
         </div>
         </div>
         <div class="container">
-        <div class="tour__HL">
+        <div id="vhl" class="tour__HL">
             <div class="tour-items">
             <div class="tour-items-header section">
                 <div>
@@ -541,7 +566,7 @@
     </section>
     <!-- feedback -->
     <section class="feedback">
-        <div class="feedback-container">
+        <div class="feedback-container section">
             <div class="feedback-header">
                 <h1 class="feedback-title">Chúng tôi hi vọng được phục vụ bạn</h1>
             </div>
@@ -629,5 +654,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Main JS -->
     <script src="./js/main.js"></script>
+    <script src="./bootstrap.bundle.js"></script>
 </body>
 </html>

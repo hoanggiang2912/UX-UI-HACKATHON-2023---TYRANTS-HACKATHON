@@ -10,7 +10,9 @@ html {
     color: white;
     font-size: 16px;
     -ms-overflow-style: scrollbar;
+    scroll-behavior: smooth;
 }
+
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -144,7 +146,15 @@ body {
     box-shadow: inset 0 0 0 2px var(--dark-purple);
     border-radius: 4px;
 }
-
+#headerFixed{
+    background-color: #101010;
+    position: fixed;
+    top:0;
+    width: 200%;
+    transform: translate(-50%,-100%);
+    transition: transform 0.5s;
+    z-index: 16;
+}
 .subnav {
     opacity: 0;
     visibility: hidden;
