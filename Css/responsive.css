@@ -625,3 +625,33 @@
         overflow: visible;
     }
 }
+
+/* Responsive TourPrice */
+@media only screen and (max-width: 740px ){
+    .headline {
+        font-size: calc(1.5rem * var(--smaller));
+        margin-top: 20px;
+    }
+
+    .countdown-item {
+        font-size: calc(1.125rem * var(--smaller));
+        padding: 0;
+    }
+
+    .countdown-item span {
+        font-size: calc(3.375rem * var(--smaller));
+    }
+}
+@media only screen and (min-width: 740px) and (max-width: 1024px){
+    .headline {
+        font-size: calc(1.5rem * var(--smaller));
+    }
+
+    .countdown-item {
+        font-size: calc(1.125rem * var(--smaller));
+    }
+
+    .countdown-item span {
+        font-size: calc(3.375rem * var(--smaller));
+    }
+}
