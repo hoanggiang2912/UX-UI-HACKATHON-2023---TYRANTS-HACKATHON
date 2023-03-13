@@ -966,8 +966,6 @@ body {
 
 /* sign in form */
 .br_plus {
-    height: 680px;
-    width: 1200px;
     border-radius: 10px;
     background: linear-gradient(135deg, rgba(98, 10, 120, 0.1), rgba(174, 15, 195, 0));
     backdrop-filter: blur(2px);
@@ -998,7 +996,7 @@ body {
     text-align: center;
     color: white;
     font-family: 'Montserrat', sans-serif;
-    font-size: 50px;
+    font-size: 3em;
     margin-block: 40px;
 }
 
@@ -1187,6 +1185,9 @@ body {
 .place:focus{
     box-shadow: inset 0 0 0 1px var(--indigo);
 }
+.form-input:focus + .form-label{
+    color: white;
+}
 .form-input{
     width: 100%;
     height: 50px;
@@ -1207,6 +1208,7 @@ body {
     width: 200px;
     pointer-events: none;
     user-select: none;
+    transition: .25s ease;
 }
 .phone-number{
     display: flex;  

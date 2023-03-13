@@ -679,9 +679,39 @@
 	.about-header h1{
         font-size: 3em;
     }
+    .form_dangky--title{
+        font-size: 1.5em;
+    }
+    .form_dangky--textform{
+        width: 100%;
+    }
+    .br_plus{
+        width: 100%;
+    }
+    .select-phone-number{
+        display: none;
+    }
+    .fullname,
+    .email,
+    .place,
+    .phone-number,
+    .phone-number-input,
+    .phone-number-input-wrapper,
+    .csm-note{
+        width: 100%;
+    }
+    .form-label{
+            transform: translateX(-300px);
+    }
+    .form-input{
+        padding-inline: 20px;
+    }
 }
 /* Mobile and Tablet: width < 1024px */
-@media only screen and (max-width: 63.9375em){
+@media only screen and (max-width: 64em){
+    .discover-now-btn{
+        width: 200px;
+    }
     .all-of-tour-item {
         overflow-x: auto;
         scroll-snap-type: x mandatory;
