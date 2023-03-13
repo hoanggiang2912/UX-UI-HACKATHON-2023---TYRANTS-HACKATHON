@@ -12,7 +12,9 @@
     <!-- CSS-Animation -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- Font-Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Main-CSS -->
     <link rel="stylesheet" href="./Css/style.css">
     <link rel="stylesheet" href="./Css/darkModeTheme.css">
@@ -68,10 +70,11 @@
         <label for="nav-tablet-btn" class="overlay"></label>
         <ul class="header-tablet-nav">
             <label for="nav-tablet-btn" class="header-tablet-close-btn">
-                <i class="fa-sharp fa-regular fa-circle-xmark close-btn"></i>
+                <i class="fa-sharp fa-solid fa-circle-xmark close-btn"></i>
             </label>
-            <li><a href="">Home</a></li>
+            <li><a href=""><i class="fa-solid fa-house"></i> Home</a></li>
             <li>
+                <i class="fa-solid fa-map"></i>
                 <a href="">Tour</a>
                 <ul class="tablet-subnav">
                     <li><a href="">Huế</a></li>
@@ -79,9 +82,13 @@
                     <li><a href="">Vịnh Hạ Long</a></li>
                 </ul>
             </li>
-            <li><a href="">About us</a></li>
-            <li><a href="">Contact</a></li>
+            <li><i class="fa-solid fa-users"></i> <a href="">About us</a></li>
+            <li><i class="fa-solid fa-phone"></i> <a href="">Contact</a></li>
         </ul>
+        <div class="header-content">
+            <h1>WELCOME TO <br> VIỆT NAM</h1>
+            <a href="#let-about" class="discover-now-btn">Khám phá ngay</a>
+        </div>
     </header>
     <!-- <header id="headerFixed">
         <nav class="navbar container navbar-expand-md">
@@ -118,7 +125,7 @@
     
     <!-- About Viet Nam -->
     <section class="about">
-        <div class="about-header">
+        <div class="about-header" id="let-about">
             <h1>About Việt Nam</h1>
         </div>
         <div class="about-content-wrapper">
@@ -163,6 +170,9 @@
             </div>
         </div>
     </section>
+    <!-- all of tours -->
+    
+    <!-- end all of tours -->
     <!-- Start Tour -->
     <section class="tour">
         <!-- Start SaPa -->
@@ -568,7 +578,7 @@
     <section class="feedback">
         <div class="feedback-container section">
             <div class="feedback-header">
-                <h1 class="feedback-title">Chúng tôi hi vọng được phục vụ bạn</h1>
+                <h1 class="feedback-title">Phản Hồi Từ Khách Hàng</h1>
             </div>
             <div class="feedback-content">
                 <div class="feedback-items feedback-csm1">
