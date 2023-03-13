@@ -625,3 +625,85 @@
         overflow: visible;
     }
 }
+
+/* Responsive TourPrice */
+@media only screen and (max-width: 740px ){
+    .headline {
+        font-size: calc(1.5rem * var(--smaller));
+        margin-top: 20px;
+    }
+
+    .countdown-item {
+        font-size: calc(1.125rem * var(--smaller));
+        padding: 0;
+    }
+
+    .countdown-item span {
+        font-size: calc(3.375rem * var(--smaller));
+    }
+
+    .all-of-tour-item {
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+    }
+
+    .short-detail-wrapper{
+        scroll-snap-align: start;
+    }
+}
+@media only screen and (min-width: 740px) and (max-width: 1024px){
+    .header-content{
+        margin-top: 0;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+    .headline {
+        font-size: calc(1.5rem * var(--smaller));
+    }
+
+    .countdown-item {
+        font-size: calc(1.125rem * var(--smaller));
+    }
+
+    .countdown-item span {
+        font-size: calc(3.375rem * var(--smaller));
+    }
+
+
+}
+/* Mobile: with < 740px */
+@media only screen and (max-width: 46.1875em){
+	.about-header h1{
+        font-size: 3em;
+    }
+}
+/* Mobile and Tablet: width < 1024px */
+@media only screen and (max-width: 63.9375em){
+    .all-of-tour-item {
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+    }
+
+    .short-detail-wrapper {
+        scroll-snap-align: start;
+        scroll-snap-stop: always;
+        box-shadow: none;
+    }
+
+    .all-of-tour-item::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    .all-of-tour-item::-webkit-scrollbar-track {
+        border-radius: 5px;
+        background-color: #fff;
+    }
+
+    .all-of-tour-item::-webkit-scrollbar-thumb {
+        background-image: linear-gradient(to top, #fef001, #ffe000, #ffcf00, #ffbf00, #ffaf00, #ffa100, #ff9300, #fe8500, #ff7400, #ff6100, #ff4b00, #ff2c05);
+        border-radius: 50px;
+    }
+}
