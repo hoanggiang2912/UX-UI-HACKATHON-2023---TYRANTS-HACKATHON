@@ -270,7 +270,13 @@
     .tour-items-body-left h3 {
         margin-top: 15px;
     }
-
+    iframe{
+        width: 100%;
+    }
+    iframe.video{
+        width: 100% !important;
+        height: 100% !important;
+    }
     .tour-items-body .tour-items-body-right {
         width: 100%;
     }
@@ -472,6 +478,7 @@
 
     .tour-items-header h3 {
         font-size: 35px !important;
+        margin: 0 !important;
     }
 
     .tour-items-body {
@@ -736,4 +743,11 @@
         background-image: linear-gradient(to top, #fef001, #ffe000, #ffcf00, #ffbf00, #ffaf00, #ffa100, #ff9300, #fe8500, #ff7400, #ff6100, #ff4b00, #ff2c05);
         border-radius: 50px;
     }
+}
+@media screen and (max-width: 991.98px){
+    .hue-mobile{
+        display: flex !important;
+        flex-direction: column-reverse;
+    }
+    
 }

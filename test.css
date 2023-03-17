@@ -1,0 +1,30 @@
+.video{
+    width: 38%;
+    margin: 3% 6%;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 0;
+    position: relative;
+  }
+  html, body {
+    height: 100%;
+  }
+  
+
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+.tour-items-body {
+  display: flex;
+  width: 100%;
+}
+.tour-items-body-left{
+  width: 55%;
+}
+.tour-items-body-right{
+  width: 45%;
+
+}
